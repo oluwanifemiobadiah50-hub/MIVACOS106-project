@@ -50,4 +50,84 @@ section {
 main {
     padding: 20px;
 }
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin-top: 20px;
+}
 
+#contactForm label {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#contactForm input,
+#contactForm textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contactForm button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contactForm button {
+    background-color: #4b0082;
+}
+#formError {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: green;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+table th,
+table td {
+    padding: 12px 20px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+table th {
+    background-color: #6a0dad;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+@media (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+    #contactForm {
+        max-width: 100%;
+    }
+}
